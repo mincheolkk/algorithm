@@ -16,4 +16,14 @@ def solution(numbers):
         return "0"
     return answer
 
+#lambda 이용한 풀이
+def solution(numbers):
+    b = []
+    answer=""
+
+    for i in numbers:
+        i = str(i)
+        b.append(i)
+    b.sort(key=lambda x: x*3, reverse=True)
+    return str(int(''.join(b)))
 
