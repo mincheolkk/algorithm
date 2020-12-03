@@ -9,9 +9,12 @@ def solution(numbers):
         c = [i[0],j,i]
         b.append(c)
     b=sorted(b, reverse=True)
+    
     for i in range(len(b)):
         d.append(b[i][2])
+    
     answer = "".join(d)
+    
     if answer[0] == "0":
         return "0"
     return answer
@@ -24,6 +27,10 @@ def solution(numbers):
     for i in numbers:
         i = str(i)
         b.append(i)
+    
     b.sort(key=lambda x: x*3, reverse=True)
-    return str(int(''.join(b)))
+    b = ''.join(b)
+    if b[0] == '0':
+        return '0'
+    return b
 
