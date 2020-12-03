@@ -22,8 +22,7 @@ def solution(numbers):
 #lambda 이용한 풀이
 def solution(numbers):
     b = []
-    answer=""
-
+    
     for i in numbers:
         i = str(i)
         b.append(i)
