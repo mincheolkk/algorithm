@@ -1,4 +1,4 @@
-#solution 1.
+
 def solution(numbers):
     b = []
     d=[]
@@ -17,8 +17,3 @@ def solution(numbers):
     return answer
 
 
-#solution 2. lambda 사용한 풀이
-def solution(numbers):
-    numbers = list(map(str, numbers))
-    numbers.sort(key=lambda x: x*3, reverse=True)
-    return str(int(''.join(numbers)))
