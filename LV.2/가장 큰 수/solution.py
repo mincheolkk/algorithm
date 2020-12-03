@@ -16,4 +16,8 @@ def solution(numbers):
         return "0"
     return answer
 
-
+#lambda를 이용한 풀이
+def solution(numbers):
+    numbers = list(map(str, numbers))
+    numbers.sort(key=lambda x: x*3, reverse=True)
+    return str(int(''.join(numbers)))
