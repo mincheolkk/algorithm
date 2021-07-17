@@ -2,7 +2,8 @@ import java.util.*;
 
 class Solution {
     public int[] solution(int[] numbers) {
-        Arrays.sort(numbers);
+        
+        // Arrays.sort(numbers); 테스트게이스 일부만 성공
         
         ArrayList<Integer> list = new ArrayList<> ();
         int total;
@@ -15,6 +16,8 @@ class Solution {
                 }
             }
         }
+        
+        Collections.sort(list);
         
         int[] answer = new int[list.size()];
 
